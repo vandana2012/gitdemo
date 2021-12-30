@@ -3,11 +3,9 @@ from selenium.webdriver.support.select import Select
 
 #driver = webdriver.Chrome(executable_path="C:\\chromedriver.exe")
 driver = webdriver.Firefox(executable_path="C:\\geckodriver.exe")
-driver.get("https://rahulshettyacademy.com/angularpractice/")
-
-#driver.find_element_by_name("name").send_keys("Rahul")
-driver.find_element_by_css_selector("input[name='name']").send_keys("Rahul")
 driver.find_element_by_name("email").send_keys("Shetty")
+print("hi rahul")
+
 
 driver.find_element_by_id("exampleCheck1").click()
 
